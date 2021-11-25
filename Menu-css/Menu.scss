@@ -1,0 +1,235 @@
+$primarycolor: #9356dc;
+$secondarycolor: #ff79da;
+$tertiarycolor: #99e2d0;
+$backgroundcolor: #f2f2f2;
+$font-family: Roboto, sans-serif;
+body {
+  font-family: $font-family;
+  overflow: auto;
+}
+.back-btn{
+  font-size: 24px;
+  background-color: white;
+  border: none;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.logo {
+  width: 200px;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+@media only screen and (min-width:768px){
+.logo{
+  margin-left: 220px;
+}
+}
+@media only screen and (min-width:992px){
+  .logo{
+    margin-left: 450px;
+  }
+  }
+
+.menu-image {
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+  position: relative;
+  object-fit: cover;
+}
+.menu-header{
+  margin-left: 20px;
+  padding-top: 30px;
+}
+.heart-icon {
+  margin-top: -70px;
+  margin-left: 280px;
+  width: 100px;
+}
+@media only screen and (min-width:768px){
+  .heart-icon{
+    margin-left: 600px;
+  }
+  }
+  @media only screen and (min-width:992px){
+    .heart-icon{
+      margin-left: 1100px;
+    }
+    }
+.empty-heart {
+  margin-top: 13px;
+  margin-left: 40px;
+  font-weight: 100;
+  position: relative;
+  }
+.full-heart {
+  margin-top: 13px;
+  margin-left: 40px;
+  font-weight: 100;
+
+}
+.heart-icon .full-heart {
+  visibility: hidden;
+  color: #9356dc;
+  position: relative;
+  top: -45px;
+}
+.empty-heart:hover {
+  visibility: hidden;
+}
+.heart-icon:hover .full-heart {
+  visibility: visible;
+  animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container-menu {
+  background: $backgroundcolor;
+  width: 100%;
+  height: auto;
+  border-radius: 40px 40px 0 0;
+  margin-top: -55px;
+  animation: container-load 300ms ease;
+}
+@keyframes container-load {
+  0% {
+    transform: translatex(-100%);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+
+h3 {
+  margin-left: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid $tertiarycolor;
+  width: 50px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+.item-container {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  line-height: 1;
+  overflow: hidden;
+  margin: 20px;
+  .item-name {
+    width: 88%;
+    font-size: large;
+    padding-left: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .item-name :first-of-type {
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .item-name :nth-of-type(2) {
+    font-size: smaller;
+    opacity: 0.8;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .price {
+    font-weight: bold;
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 6px;
+    width: 15%;
+  }
+  .check-box {
+    background-color: $tertiarycolor;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -20%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .check-box i {
+    font-size: 21px;
+    color: white;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.item-container:hover .check-box {
+  right: 0;
+}
+.item-container:hover .check-box i {
+  transform: rotate(360deg);
+}
+.item-container:hover .item-name {
+  width: 65%;
+}
+
+.order-now {
+  width: 150px;
+  align-items: center;
+  margin-top: 50px;
+  height: 40px;
+  font-size: 22px;
+  color: white;
+  background-color: $secondarycolor;
+  background-image: linear-gradient($secondarycolor, $primarycolor);
+  box-shadow: 0 5px 5px gray;
+  border: none;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-bottom: 75px;
+  cursor: pointer;
+  transition: background-color 2s ease;
+  &:hover {
+    background-image: linear-gradient(rgb(247, 12, 149), rgb(100, 10, 100));
+  }
+}
+@media only screen and (min-width:768px){
+  .order-now{
+    margin-left: 300px;
+  }
+  }
+  @media only screen and (min-width:992px){
+    .order-now{
+      margin-left: 500px;
+    }
+    }
+.footer {
+  background-color: rgb(29, 28, 28);
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+  margin-top: -20px;
+  h1 {
+    color: white;
+    margin-left: 20px;
+    padding-top: 25px;
+    font-style: italic;
+    font-family: Shrikhand-Regular;
+  }
+  .footer-text {
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+  .contact-email {
+    color: white;
+    text-decoration: none;
+  }
+}
