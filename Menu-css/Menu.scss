@@ -31,12 +31,14 @@ body {
   }
   }
 
-.menu-image {
+ .menu-image {
   width: 100%;
   height: 200px;
   z-index: -1;
   position: relative;
   object-fit: cover;
+  padding-left: 50px;
+
 }
 .menu-header{
   margin-left: 20px;
