@@ -346,7 +346,7 @@ h5 {
   margin-top: -0px;
 }
 
-.footer-info {
+.footer {
   background-color: #1d1c1c;
   width: 100%;
   height: 300px;
@@ -398,12 +398,12 @@ h1 {
   z-index: 10;
   -webkit-animation-name: fade;
           animation-name: fade;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-timing-function: step-end;
           animation-timing-function: step-end;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -420,8 +420,8 @@ h1 {
   border-radius: 50%;
   border-top: 16px solid #058ae2;
   border-bottom: 16px solid #058ae2;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
