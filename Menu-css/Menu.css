@@ -37,6 +37,7 @@ body {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+  padding-left: 50px;
 }
 
 .menu-header {
@@ -145,7 +146,7 @@ body {
 h3 {
   margin-left: 20px;
   text-transform: uppercase;
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 4px solid #99e2d0;
   width: 50px;
   padding-bottom: 5px;
   margin-top: 30px;
